@@ -1,0 +1,182 @@
+@charset "UTF -8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+:root {
+    --cor0: #985ADB;
+    --cor1: #C0A0E1;
+    --cor3: #7545A8;
+    --cor4: #40265C;
+    --cor5: #4E415C;
+    --cor6: #B5E663;
+
+    --font-1:'Open Sans', sans-serif;
+    --font-2: 'Tektur', cursive; 
+    --font-3: Arial, Helvetica, sans-serif;
+    --font-4: 'Nova Square', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--font-1);
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(180deg, var(--cor5), var(--cor4));
+}
+
+h1 {
+    font-family: var(--font-2);
+    padding: 20px;
+    padding-top: 30px;
+    color: white;
+    font-weight: normal;
+    font-size: 2.5em;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.288);
+}
+
+nav {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    padding: 10px;
+    padding-top: 20px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.432);
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px 0 20px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.212);
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: var(--cor6);
+    transition: .2s;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    text-align: justify;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    font-family: var(--font-3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+}
+
+main h2 {
+    padding: 10px;
+    font-weight: 700;
+    color: var(--cor3);
+    font-family: var(--font-4);
+    font-size: 1.8em;
+}
+main h2::before {
+    content: "\1F6A9\00A0";
+}
+
+main h3 {
+    text-align: center;
+    padding: 10px;
+    font-family: var(--font-4);
+    font-size: 1.5em;
+}
+
+main img {
+    display: block;
+    margin: auto;
+}
+main p {
+    text-indent: 10px;
+    font-weight: 300;
+    line-height: 1.8em;
+    padding: 10px;
+}
+main a {
+    text-decoration: none;
+    background-color: var(--cor1);
+    color: white;
+    padding: 2px;
+    border-radius: 3px;
+}
+main a:hover {
+    color: var(--cor6);
+    transition: 0.2s;
+    text-decoration: underline;
+}
+
+a.externo::after {
+    content: "\1F517"
+}
+
+aside {
+    padding: 20px;
+    color: white;
+    background-color: var(--cor4);
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+}
+
+aside h2 {
+    background-color: var(--cor0);
+    margin: -20px -20px 0px -20px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    font-weight: bolder;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.212);
+}
+
+aside ul {
+    list-style-type: "\1F525\00A0";
+    list-style-position: inside;
+    columns: 2;
+    margin: 0px 0px 0px -20px
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.212);
+}
+
+aside a:hover {
+    text-decoration: underline;
+    color: var(--cor6);
+    transition: .2s;
+}
+
+footer {
+    padding: 5px;
+    color: white;
+    background-color: var(--cor6);
+    color: black;
+    text-align: center;
+}
+footer > p > a{
+    text-decoration: none;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.212);
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+    transition: .2s;
+}
+footer a::after {
+    content: "\26A1"
+}
+
